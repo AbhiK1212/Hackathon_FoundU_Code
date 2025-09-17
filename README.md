@@ -30,6 +30,7 @@ The backend is a **Node.js** server using the **Express** framework. It orchestr
 
 ## Demo
 
+https://github.com/user-attachments/assets/6d979bfc-7518-4a55-94d7-6a15694d06ad
 
 ## App Flow & Features
 
