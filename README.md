@@ -34,37 +34,34 @@ https://github.com/user-attachments/assets/6d979bfc-7518-4a55-94d7-6a15694d06ad
 
 ## App Flow & Features
 
-<img width="424" height="900" alt="Image" src="https://github.com/user-attachments/assets/d0cad5c7-c2c0-44c7-a66b-6c44b9d8edb8" />
-<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/67153e4b-0a41-4afd-8f78-2db406e8ad57" />
-<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/749fde31-074f-4311-b8de-fdae258a6894" />
-<img width="419" height="900" alt="Image" src="https://github.com/user-attachments/assets/9780966b-1c42-452f-8440-2dd82ebdfce3" />
-<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/d1c5d464-377b-4a24-9e53-41a2d6adbc31" />
-<img width="422" height="900" alt="Image" src="https://github.com/user-attachments/assets/3d85aa06-3d44-4ff3-9053-636809b3c854" />
-
 ### 1. Home Screen
 A simple and clear entry point for a user who has found a UCard.
 
-<img width="300" alt="FoundU Home Screen" src="https://i.imgur.com/Qj04b7y.png">
+<img width="422" height="900" alt="Image" src="https://github.com/user-attachments/assets/3d85aa06-3d44-4ff3-9053-636809b3c854" />
 
 ### 2. UCard Scanning & Name Confirmation
 The user takes a photo, and the app uses OCR to extract the name, which the user then confirms.
 
-<img width="300" alt="Name Confirmation Screen" src="https://i.imgur.com/8m4U06E.png">
+<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/d1c5d464-377b-4a24-9e53-41a2d6adbc31" />
+<img width="419" height="900" alt="Image" src="https://github.com/user-attachments/assets/9780966b-1c42-452f-8440-2dd82ebdfce3" />
 
 ### 3. Action Selection & Location Input
 The user specifies whether they left the card somewhere or will hold onto it for the owner.
 
-<img width="300" alt="Action Selection Screen" src="https://i.imgur.com/i9q9z5U.png">
+<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/749fde31-074f-4311-b8de-fdae258a6894" />
+<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/67153e4b-0a41-4afd-8f78-2db406e8ad57" />
 
 ### 4. Automated Email Notification
 The system automatically finds the owner's email and sends a notification with the UCard image and retrieval information.
 
 <img width="600" alt="Email Notification Screenshot" src="https://i.imgur.com/qg4T215.png">
+<img width="424" height="900" alt="Image" src="https://github.com/user-attachments/assets/d0cad5c7-c2c0-44c7-a66b-6c44b9d8edb8" />
+
 
 ### 5. Success!
-The app confirms that the notification has been sent, completing the process.
+The email is sent!
 
-<img width="300" alt="Thank You Screen" src="https://i.imgur.com/NFXk6rS.png">
+<img width="1119" height="489" alt="Image" src="https://github.com/user-attachments/assets/1aabc6e1-8449-479d-a557-e6c32c0a2597" />
 
 ## What's Next for FoundU
 Our goal is to collaborate with UMass administration to integrate FoundU into official university systems. We are exploring potential integrations with platforms like GETMobile to make this a seamless, university-sanctioned solution for all students.
