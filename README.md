@@ -1,50 +1,77 @@
-# FoundU - Lost UCard Finder App
+# FoundU 🏆
 
-FoundU is a full-stack mobile application designed to help recover lost university identification cards (UCards) for students. The app enables users to take a photo of a found UCard, automatically detect the student's name using Google Vision API, and then notify the rightful owner by email. Using Puppeteer, the app automates the process of extracting email addresses from a university directory.
+FoundU is a mobile application built with React Native that streamlines the process of returning lost UMass UCards to their owners. By leveraging AI-powered text recognition and automated web scraping, the app instantly notifies students when their card is found. This project was awarded the **Wolfram Award** at HackUMass.
 
-## Table of Contents
+[**Devpost Link**](https://devpost.com/software/foundu)
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## The Problem
+Every UMass student has experienced or witnessed the stress of losing a UCard. These cards are essential for accessing dorms, meal plans, and other campus facilities. When a UCard is found, the current methods for returning it are inefficient, often relying on Snapchat stories where the post can easily get lost, or dropping it in a random lost-and-found box. This results in a frustrating and time-consuming recovery process for the owner.
 
-## Features
+## Our Solution
+FoundU simplifies this entire process into a few easy steps:
 
-- Capture a picture of the found UCard.
-- Extract the student's name using Google Vision API.
-- Scrape email addresses from the university directory using Puppeteer.
-- Send emails to the detected student to inform them of their lost UCard.
-- Provide the user with options on whether they kept or left the card at a particular location.
+1.  **Scan the UCard:** A user who finds a UCard simply opens the app and takes a photo of it.
+2.  **AI-Powered Name Extraction:** The app uses Google Vision API to perform Optical Character Recognition (OCR) and automatically extract the student's name from the image.
+3.  **Automated Email Lookup:** The backend system uses Puppeteer to perform an automated search on the UMass People Finder directory to retrieve the student's email address.
+4.  **Instant Notification:** An email is automatically sent to the card's owner via Nodemailer, containing a picture of their UCard and details about where it was found or how to retrieve it.
 
-## Technologies Used
+## Technical Architecture
 
-### Frontend (Mobile App)
-- **React Native**: For building the cross-platform mobile application.
-- **Expo**: To simplify development and deployment for Android and iOS.
-- **React Native Elements**: For reusable UI components.
-- **Google Vision API**: For Optical Character Recognition (OCR) to detect the name from the UCard image.
+### Mobile Application (Frontend)
+The cross-platform mobile app is built using **React Native** and the **Expo** framework.
+* **UI/UX:** A clean, intuitive interface with a dark theme and maroon accents. Interactive animations are implemented using React Native’s Animated API for a polished user experience.
+* **OCR Integration:** The app integrates the **Google Vision API** to perform on-device text detection. An image of the UCard is converted to base64 and sent to the API, which returns the extracted text. A custom parsing function then identifies the student's full name.
 
-### Backend
-- **Node.js** and **Express.js**: For setting up the server to handle image uploads and send emails.
-- **Multer**: For handling file uploads in Node.js.
-- **Nodemailer**: For sending email notifications to students.
-- **Puppeteer**: For scraping email addresses from the university directory.
+### Backend Server & Automation
+The backend is a **Node.js** server using the **Express** framework. It orchestrates the core logic of the application.
+* **API:** A simple REST API endpoint handles image uploads from the mobile client using `multer`.
+* **Web Scraping:** Upon receiving a student's name, the server launches a headless browser instance using **Puppeteer**. It navigates to the UMass People Finder, logs in with stored credentials, and scrapes the search results to find the corresponding student email address(es).
+* **Email Notifications:** The server uses **Nodemailer** to send automated emails to the identified student. The email includes a custom message, the student's name, and the picture of the found UCard as an attachment.
 
-### Environment Management
-- **dotenv**: For managing sensitive credentials and API keys.
+## Demo
 
-## Installation
+[**Watch the full video demo here**](https://drive.google.com/file/d/1G0BNXSnNXEBZzIng3oqgk4Vi4bg4AT0v/view)
 
-### Prerequisites
+<a href="https://drive.google.com/file/d/1G0BNXSnNXEBZzIng3oqgk4Vi4bg4AT0v/view" target="_blank">
+  <img width="300" alt="FoundU Demo Video Thumbnail" src="https://i.imgur.com/o2xZ23i.png">
+</a>
 
-- **Node.js** and **npm** or **yarn** installed on your machine.
-- **Expo CLI** installed globally: `npm install -g expo-cli`.
+## App Flow & Features
 
-### Clone the Repository
+### 1. Home Screen
+A simple and clear entry point for a user who has found a UCard.
 
-```bash
-$ git clone https://github.com/username/FoundU.git
-$ cd FoundU
+<img width="300" alt="FoundU Home Screen" src="https://i.imgur.com/Qj04b7y.png">
+
+### 2. UCard Scanning & Name Confirmation
+The user takes a photo, and the app uses OCR to extract the name, which the user then confirms.
+
+<img width="300" alt="Name Confirmation Screen" src="https://i.imgur.com/8m4U06E.png">
+
+### 3. Action Selection & Location Input
+The user specifies whether they left the card somewhere or will hold onto it for the owner.
+
+<img width="300" alt="Action Selection Screen" src="https://i.imgur.com/i9q9z5U.png">
+
+### 4. Automated Email Notification
+The system automatically finds the owner's email and sends a notification with the UCard image and retrieval information.
+
+<img width="600" alt="Email Notification Screenshot" src="https://i.imgur.com/qg4T215.png">
+
+### 5. Success!
+The app confirms that the notification has been sent, completing the process.
+
+<img width="300" alt="Thank You Screen" src="https://i.imgur.com/NFXk6rS.png">
+
+## What's Next for FoundU
+Our goal is to collaborate with UMass administration to integrate FoundU into official university systems. We are exploring potential integrations with platforms like GETMobile to make this a seamless, university-sanctioned solution for all students.
+
+## Built With
+* React Native (Expo)
+* Node.js
+* Express
+* Google Vision API
+* Puppeteer
+* Nodemailer
+* MongoDB
+* Firebase
