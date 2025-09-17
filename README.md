@@ -30,11 +30,6 @@ The backend is a **Node.js** server using the **Express** framework. It orchestr
 
 ## Demo
 
-[**Watch the full video demo here**](https://drive.google.com/file/d/1G0BNXSnNXEBZzIng3oqgk4Vi4bg4AT0v/view)
-
-<a href="https://drive.google.com/file/d/1G0BNXSnNXEBZzIng3oqgk4Vi4bg4AT0v/view" target="_blank">
-  <img width="300" alt="FoundU Demo Video Thumbnail" src="https://i.imgur.com/o2xZ23i.png">
-</a>
 
 ## App Flow & Features
 
