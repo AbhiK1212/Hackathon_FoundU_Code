@@ -34,6 +34,13 @@ https://github.com/user-attachments/assets/6d979bfc-7518-4a55-94d7-6a15694d06ad
 
 ## App Flow & Features
 
+<img width="424" height="900" alt="Image" src="https://github.com/user-attachments/assets/d0cad5c7-c2c0-44c7-a66b-6c44b9d8edb8" />
+<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/67153e4b-0a41-4afd-8f78-2db406e8ad57" />
+<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/749fde31-074f-4311-b8de-fdae258a6894" />
+<img width="419" height="900" alt="Image" src="https://github.com/user-attachments/assets/9780966b-1c42-452f-8440-2dd82ebdfce3" />
+<img width="423" height="900" alt="Image" src="https://github.com/user-attachments/assets/d1c5d464-377b-4a24-9e53-41a2d6adbc31" />
+<img width="422" height="900" alt="Image" src="https://github.com/user-attachments/assets/3d85aa06-3d44-4ff3-9053-636809b3c854" />
+
 ### 1. Home Screen
 A simple and clear entry point for a user who has found a UCard.
 
