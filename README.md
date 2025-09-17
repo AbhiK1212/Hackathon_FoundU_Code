@@ -57,7 +57,7 @@ The system automatically finds the owner's email and sends a notification with t
 <img width="424" height="900" alt="Image" src="https://github.com/user-attachments/assets/d0cad5c7-c2c0-44c7-a66b-6c44b9d8edb8" />
 
 ### 5. Success!
-The email is sent!
+The email is sent (Email Template)!
 
 <img width="1119" height="489" alt="Image" src="https://github.com/user-attachments/assets/1aabc6e1-8449-479d-a557-e6c32c0a2597" />
 
