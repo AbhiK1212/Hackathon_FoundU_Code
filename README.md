@@ -54,9 +54,7 @@ The user specifies whether they left the card somewhere or will hold onto it for
 ### 4. Automated Email Notification
 The system automatically finds the owner's email and sends a notification with the UCard image and retrieval information.
 
-<img width="600" alt="Email Notification Screenshot" src="https://i.imgur.com/qg4T215.png">
 <img width="424" height="900" alt="Image" src="https://github.com/user-attachments/assets/d0cad5c7-c2c0-44c7-a66b-6c44b9d8edb8" />
-
 
 ### 5. Success!
 The email is sent!
